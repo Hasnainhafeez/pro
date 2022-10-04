@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 62.5%;
+    
+}
+.head{
+    font-size: 5rem;
+    text-align: center;
+    border: .1rem solid black;
+    margin-top: 60px;
+    font-family: fantasy;
+    background-color: black;
+
+}
+.head_h1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #302b29 0%,
+    #e5e3e9 29%,
+    #363631 67%,
+    #eeece6 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 3rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.navbar{
+    height: 6.0rem;
+    margin: 6.0rem;
+    border: 1.0rem solid black;
+    background-color: black;
+    text-align: center;
+}
+*,*:before,*:after{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 3.3rem;
+
+  }
+li{
+    display: inline;
+    padding: 5.0rem;
+    
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(245, 241, 241);
+    padding: 0 1rem;
+    
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 0.3rem;
+    width: 0;
+    left: 0;
+    bottom:-1rem;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(225, 14, 14);
+}
+a:hover:after{
+    width:100%;
+}
+.main{
+    width: 80%;
+    height: 50rem;
+    margin-top: 10rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6rem 2rem 16rem 0rem, rgba(255, 255, 255, 0.8) -6rem -2rem 16rem 0rem;
+    background-image: url(./joshua-rawson-harris-Cy1tY6A8Cbk-unsplash.jpg);
+    background-size: cover;
+    animation: slider 45s infinite linear;
+}
+@keyframes slider{
+    0%{
+        background-image: url(./doodoosonic-0t7PNNZlTC0-unsplash.jpg);
+    }
+    35%{
+        background-image: url(./hunters-race-hNoSCxPWYII-unsplash.jpg);
+    }
+    55%{
+        background-image: url(./nima-mot-l8AsGNioZjo-unsplash.jpg);
+    }
+    75%{
+background-image: url(./nordwood-themes-eGHlWS-zQSM-unsplash.jpg);
+    }
+    92%{
+        background-image: url(./wesley-tingey-3mGnYRUNIck-unsplash.jpg);
+    }
+}
+.h1-main{
+    font-size: 3rem;
+    position: relative;
+    top:17rem;
+    margin-left: 3rem;
+    border: 0.8rem solid black;
+    color: white;
+    width: 40%;
+    background-color: black;
+}
+.item{
+    display: flex;
+    width: 80%;
+    
+    margin-top: 10rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    height:70rem;
+    
+    
+    
+}
+.selling{
+    width:50%;
+    margin:10rem;
+    border: 1rem solid rgb(24, 23, 23);
+    height:50rem;
+    text-align: center;
+    background-image: url(./ap1.avif);
+    background-size: cover;
+    animation: sell 35s infinite linear;
+}
+@keyframes sell{
+    0%{
+        background-image: url(./ap1.avif)
+    }
+    35%{
+        background-image: url(./ap3.avif);
+    }
+    55%{
+        background-image: url(./ap2.avif);
+    }
+    75%{
+background-image: url(./ap4.avif);
+    }
+    92%{
+        background-image: url(./ap5.avif);
+    }
+}
+.sale{
+    width:50%;
+    margin:10rem;
+    border: 1rem solid rgb(24, 23, 23);
+    height:50rem;
+    text-align: center;
+    background-image: url(./s2.avif);
+    background-size: cover;
+    animation: sale 35s infinite linear;
+}
+@keyframes sale{
+    0%{
+        background-image: url(./s1.avif)
+    }
+    35%{
+        background-image: url(./s3.avif);
+    }
+    55%{
+        background-image: url(./s2.avif);
+    }
+    75%{
+background-image: url(./s4.avif);
+    }
+    92%{
+        background-image: url(./s5.avif);
+    }
+}
+button{
+    position: relative;
+    top:33rem;
+    font-size: 3rem;
+    background-color: black;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0rem -23rem 25rem 0rem inset, rgba(0, 0, 0, 0.15) 0rem -36rem 30rem 0rem inset, rgba(0, 0, 0, 0.1) 0rem -79rem 40rem 0rem inset, rgba(0, 0, 0, 0.06) 0rem 2rem 1rem, rgba(0, 0, 0, 0.09) 0rem 4rem 2rem, rgba(0, 0, 0, 0.09) 0rem 8rem 4rem, rgba(0, 0, 0, 0.09) 0rem 16rem 8rem, rgba(0, 0, 0, 0.09) 0rem 32rem 16rem;
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
